@@ -6,6 +6,7 @@ import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
 import Services from '../components/Services'
 import Footer from '../components/Footer'
+import JoinTeam from '../components/JoinTeam/index.js'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -26,7 +27,11 @@ const Home = () => {
             <InfoSection {...homeObjOne}/>
             <InfoSection {...homeObjTwo}/>
             <Services/>
-            <InfoSection {...homeObjThree}/>
+
+            <JoinTeam {...homeObjThree}/>
+            
+
+
             <Footer/>
         </>
     )

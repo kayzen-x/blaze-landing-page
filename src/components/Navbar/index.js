@@ -16,7 +16,7 @@ import {
 
 const Navbar = ({ toggle }) => {
 
-    const [scrollNav, setScrollNav] = useState(false)
+    const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
         let abortController = new AbortController();

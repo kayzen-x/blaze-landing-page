@@ -1,7 +1,6 @@
 import '../../App.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { 
     InfoContainer,
     InfoWrapper,
@@ -15,8 +14,8 @@ import {
     BtnWrap,
     ImgWrap,
     Img
-} from './InfoElements'
-import { Button } from '../ButtonElement';
+} from '../InfoSection/InfoElements'
+import { NavBtnLink } from '../Navbar/NavbarElements'; 
 
 // const styles = {
 //     container: {
@@ -31,7 +30,7 @@ import { Button } from '../ButtonElement';
 //     },
 //   };
 
-const InfoSection = ({ 
+const JoinTeam = ({ 
     id, 
     lightBg,
     imgStart, 
@@ -55,15 +54,15 @@ const InfoSection = ({
                 <InfoRow imgStart={imgStart}>
                     <TrackVisibility>
                         {({ isVisible }) => (
-                          <div className={isVisible ? "animate__animated animate__fadeInLeft" : ""}>
+                          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                             <Column1>
                                 <TextWrapper>
                                     <TopLine> {topLine} </TopLine>
                                     <Heading lightText={lightText}> {headline} </Heading>
                                     <Subtitle darkText={darkText}> {description} </Subtitle>
                                     <BtnWrap> 
-                                        <Button 
-                                            to={link ? link : "home"}
+                                        <NavBtnLink 
+                                            to="/signin"
                                             smooth={true}
                                             duration={500}
                                             spy={true}
@@ -72,7 +71,7 @@ const InfoSection = ({
                                             primary={primary ? 1 : 0}
                                             dark={dark ? 1 : 0}
                                             dark2={dark2 ? 1 : 0}
-                                        > {buttonLabel} </Button>
+                                        > {buttonLabel} </NavBtnLink>
                                     </BtnWrap>
                                 </TextWrapper>
                             </Column1>
@@ -82,7 +81,7 @@ const InfoSection = ({
 
                     <TrackVisibility>
                         {({ isVisible }) => (
-                          <div className={isVisible ? "animate__animated animate__fadeInRight" : ""}>
+                          <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                             <Column2 id="column2">
                                 <ImgWrap>
                                     <Img src={img} alt={alt}/>
@@ -99,4 +98,4 @@ const InfoSection = ({
     )
 }
 
-export default InfoSection
+export default JoinTeam
