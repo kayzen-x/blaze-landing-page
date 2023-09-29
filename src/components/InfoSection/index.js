@@ -1,7 +1,6 @@
 import '../../App.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { 
     InfoContainer,
     InfoWrapper,
@@ -46,7 +45,7 @@ const InfoSection = ({
     primary,
     dark,
     dark2,
-    link
+    animate2
 }) => {
     return (
         <>
@@ -63,7 +62,7 @@ const InfoSection = ({
                                     <Subtitle darkText={darkText}> {description} </Subtitle>
                                     <BtnWrap> 
                                         <Button 
-                                            to={link ? link : "home"}
+                                            to={"home"}
                                             smooth={true}
                                             duration={500}
                                             spy={true}
@@ -82,13 +81,13 @@ const InfoSection = ({
 
                     <TrackVisibility>
                         {({ isVisible }) => (
-                          <div className={isVisible ? "animate__animated animate__fadeInRight" : ""}>
+                          <div className={isVisible ? animate2 : ""}>
                             <Column2 id="column2">
                                 <ImgWrap>
                                     <Img src={img} alt={alt}/>
                                     </ImgWrap>
                                 </Column2>
-                          </div>
+                            </div>
                         )}
                     </TrackVisibility>
                     

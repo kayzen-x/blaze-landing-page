@@ -24,17 +24,13 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection/>
-            <InfoSection {...homeObjOne}/>
-            <InfoSection {...homeObjTwo}/>
+            <InfoSection {...homeObjOne} />
+            <InfoSection {...homeObjTwo} />
             <Services/>
-
             <JoinTeam {...homeObjThree}/>
-            
-
-
             <Footer/>
         </>
     )
 }
 
-export default Home
+export default Home; 

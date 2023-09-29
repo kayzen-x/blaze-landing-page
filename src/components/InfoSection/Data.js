@@ -31,7 +31,8 @@ export const homeObjTwo = {
     alt: 'GugaDiscover',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    animate2: "animate__animated animate__fadeInRight"
 } 
 
 export const homeObjThree = {
