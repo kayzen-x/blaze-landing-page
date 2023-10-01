@@ -28,7 +28,7 @@ export const homeObjTwo = {
     buttonLabel: 'Learn More',
     imgStart: true,
     img: require('../../images/svg-1.svg').default,
-    alt: 'GugaDiscover',
+    alt: 'BlazeDiscover',
     dark: false,
     primary: false,
     darkText: true,
@@ -46,8 +46,9 @@ export const homeObjThree = {
     buttonLabel: 'Start Now',
     imgStart: false,
     img: require('../../images/svg-3.svg').default,
-    alt: 'GugaSignUp',
+    alt: 'BlazeSignUp',
     dark: false,
     primary: false,
     darkText: true
 }
+
