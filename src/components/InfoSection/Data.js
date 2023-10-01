@@ -52,3 +52,19 @@ export const homeObjThree = {
     darkText: true
 }
 
+export const homeObjFour = {
+    id: 'about',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'JDiscover about us',
+    headline: 'Who we are and what we do',
+    description: "Here at blaze you can find our matra as well as as our motive",
+    buttonLabel: 'About us',
+    imgStart: false,
+    img: require('../../images/svg-4.svg').default,
+    alt: 'AboutUs',
+    dark: false,
+    primary: false,
+    darkText: true
+}
