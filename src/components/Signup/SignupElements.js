@@ -11,3 +11,32 @@ export const Container = styled.div`
     z-index: 0;
     overflow: hidden;
     background: radial-gradient(circle, rgba(243,149,64,1) 20%, rgba(61,13,1,1) 90%, rgba(0,0,0,1) 100%);
+`
+
+export const FormContent = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: 480px) {
+        padding: 10px;
+    }
+`
+
+export const Form = styled.form`
+    background: #010101;
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    margin: 0 auto;
+    padding: 80px 32px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.9);
+
+    @media screen and (max-width: 400px) {
+        padding: 32px 32px;
+    }
+`
