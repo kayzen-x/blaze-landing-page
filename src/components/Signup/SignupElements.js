@@ -11,7 +11,7 @@ export const Container = styled.div`
     z-index: 0;
     overflow: hidden;
     background: radial-gradient(circle, rgba(243,149,64,1) 20%, rgba(61,13,1,1) 90%, rgba(0,0,0,1) 100%);
-`
+`;
 
 
 export const FormWrap = styled.div`
@@ -23,7 +23,7 @@ export const FormWrap = styled.div`
     @media screen and (max-width: 400px) {
         height: 80%;
     }
-`
+`;
 
 
 export const Icon = styled(Link)`
@@ -38,7 +38,7 @@ export const Icon = styled(Link)`
         margin-left: 16px;
         margin-top: 8px;
     }
-`
+`;
 
 
 export const FormContent = styled.div`
@@ -50,7 +50,7 @@ export const FormContent = styled.div`
     @media screen and (max-width: 480px) {
         padding: 10px;
     }
-`
+`;
 
 export const Form = styled.form`
     background: #010101;
@@ -67,7 +67,7 @@ export const Form = styled.form`
     @media screen and (max-width: 400px) {
         padding: 32px 32px;
     }
-`
+`;
 
 export const FormH1 = styled.h1`
     margin-bottom: 40px;
@@ -75,20 +75,20 @@ export const FormH1 = styled.h1`
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-`
+`;
 
 export const FormLabel = styled.label`
     margin-bottom: 8px;
     font-size: 14px;
     color: #fff;
-`
+`;
 
 export const FormInput = styled.input`
     padding: 16px 16px;
     margin-bottom: 32px;
     border: none;
     border-radius: 4px;
-`
+`;
 
 export const FormButton = styled.button`
     background: #F39540;
@@ -98,10 +98,11 @@ export const FormButton = styled.button`
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-`
+`;
 
 export const Text = styled.span`
     text-align: center;
     margin-top: 24px;
     color: #fff;
     font-size: 14px;
+`;    
