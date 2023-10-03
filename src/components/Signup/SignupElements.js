@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 
 export const Container = styled.div`
     min-height: 692px;
@@ -13,7 +13,6 @@ export const Container = styled.div`
     background: radial-gradient(circle, rgba(243,149,64,1) 20%, rgba(61,13,1,1) 90%, rgba(0,0,0,1) 100%);
 `;
 
-
 export const FormWrap = styled.div`
     height: 100%;
     display: flex;
@@ -24,7 +23,6 @@ export const FormWrap = styled.div`
         height: 80%;
     }
 `;
-
 
 export const Icon = styled(Link)`
     margin-left: 32px;
@@ -39,7 +37,6 @@ export const Icon = styled(Link)`
         margin-top: 8px;
     }
 `;
-
 
 export const FormContent = styled.div`
     height: 100%;
