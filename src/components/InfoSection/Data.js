@@ -64,7 +64,7 @@ export const homeObjFour = {
     imgStart: false,
     img: require('../../images/svg-3.svg').default,
     alt: 'BlazeSignUp',
-    dark: false,
-    primary: false,
+    dark: true,
+    primary: true,
     darkText: true
 }
