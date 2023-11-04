@@ -68,20 +68,3 @@ export const homeObjFour = {
     primary: true,
     darkText: true
 }
-
-export const homeObjFive = {
-    id: 'createaccount',
-    lightBg: false,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Start today',
-    headline: 'Creating an account is not hard',
-    description: "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
-    buttonLabel: 'Join us',
-    imgStart: false,
-    img: require('../../images/svg-3.svg').default,
-    alt: 'BlazeSignUp',
-    dark: false,
-    primary: false,
-    darkText: false
-}
