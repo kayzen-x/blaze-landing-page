@@ -11,6 +11,7 @@ import {
     FormButton,
     Text
  } from './SigninElements'
+import { Link } from 'react-router-dom'
 
 const SignIn = () => {
   return (
@@ -25,7 +26,7 @@ const SignIn = () => {
                     <FormLabel htmlFor='for'> Password </FormLabel>
                     <FormInput type='password' required/>
                     <FormButton type='submit'> Continue </FormButton>
-                    <Text> Forgot password? </Text>
+                    <Link> Forgot password? </Link>
                 </Form>
             </FormContent>
         </FormWrap>
